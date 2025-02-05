@@ -1,9 +1,12 @@
-// Get the button element (assuming it has an ID of "myButton")
-const button = document.getElementById('action');
+// Select the button and textbox
+const alertButton = document.getElementById('alertButton');
+const textbox = document.getElementById('textbox');
 
-// Add an event listener for the click event
-button.addEventListener('click', () => {
-  // Code to execute when the button is clicked
-  alert(text); 
-  // You can replace this with any other action you want to perform
+// Add an event listener to the button
+alertButton.addEventListener('click', function() {
+    // Get the value entered in the textbox
+    const textValue = textbox.value;
+    
+    // Display the value in an alert
+    alert('You entered: ' + textValue);
 });
